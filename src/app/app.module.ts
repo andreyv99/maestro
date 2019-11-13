@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuModule } from '@progress/kendo-angular-menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TopNavBarComponent } from './top-nav-bar/top-nav-bar.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopNavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, TopNavBarComponent]
 })
 export class AppModule { }
